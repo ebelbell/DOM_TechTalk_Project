@@ -1,0 +1,1 @@
+//create a form for the user to add input to the blog news
