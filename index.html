@@ -4,11 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SBA 316: The DOM</title>
+    <script defer src="./script/index.mjs"></script>
+    <link rel="stylesheet" href="./style/styles.css" />
 </head>
 <body>
-    <!--This program is a blog for Per Scholas Software Engineer 2024 updates everytime the user new entry is added.
-    That entry gets pushed to the top so that it's organized by the most recent.
+    <h1>The Nested</h1> 
+
+    <p><em>This program is a blog for new tech related news.
+        That entry gets pushed to the top so that it's organized by the most recent.</em></p></br>
+
+    <!--
     
-    nav bar:         Class Cirriculum              Tech Talk          Discord        Class Notes-->
+    nav bar:         Class Cirriculum              Tech Talk                Class Notes              Login-->
+    
+    <!-- put this in a div so that it can be styled in CSS and text-align: center;-->
+    <div id="app">
+        <p>Share your tech-related news here!</p>
+        <form id="commentInput">
+            <input type="text" minlength="4" maxlength="10" required />
+            <p><button id="addCommentBtn">Add Comment</button></p></br>
+        </form>
+    </div>
+    <!--end of div-->
+
+
+
+
+
+    <h3>Tech Talk</h3>
+    <ul id="commentList">
+      <li>Your news will show up here. Thanks!</li>
+    </ul>
+    
+
+
 </body>
 </html>
