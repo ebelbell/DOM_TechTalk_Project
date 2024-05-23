@@ -20,10 +20,9 @@
         
 
     <!--subject form-->
-    <select name="subject">
-        <option placeholder="">Tech Subject</option>
+    <select name="subject" id="cSubject"> 
+        <option placeholder="" disabled selected>Tech Subject</option>
         <option value="JavaScript">JavaScript</option>
-        <option value="Python">Python</option>
         <option value="AI">AI</option>
         <option value="Coding Events">Coding Events</option>
         <option value="Other">Other - Please specify below!</option>
@@ -33,16 +32,18 @@
     <div id="app">
         <form id="userEntry">
         <p>Share your tech-related news here!</p>
-            <input type="text" id="commentInput" minlength="4" maxlength="250" required />
+            <input type="text" id="commentInput" minlength="8" maxlength="250" required />
             <p><button id="addCommentBtn"> Add Comment</button></p></br>  
         </form>  
     </div>
     <!--end of div-->
 
     <h3>Tech Talk</h3>
-    <ul id="commentList">
+    <ul id="java_CommentList">
         <li>Your news will show up here. Thanks!</li>
     </ul>
+           
+    
 
 </body>
 </html>

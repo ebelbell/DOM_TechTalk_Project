@@ -2,19 +2,19 @@ h1 {
     text-align: center;
 }
 
-p{
+p {
     font-size: 15px;
 }
 
 body {
-    background: #9bcdeb;
+    background: #d3e7f3;
     color: #232323;
     line-height: 30px;
     font-size: 20px;
     font-family: sans-serif;
     padding: 25px 50px;
   }
-  
+
   button {
     font-size: 15px;
     padding: 5px 10px;
