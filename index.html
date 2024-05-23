@@ -12,31 +12,37 @@
 
     <p><em>This program is a blog for new tech related news.
         That entry gets pushed to the top so that it's organized by the most recent.</em></p></br>
+    
 
     <!--
     
     nav bar:         Class Cirriculum              Tech Talk                Class Notes              Login-->
-    
+        
+
+    <!--subject form-->
+    <select name="subject">
+        <option placeholder="">Tech Subject</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Python</option>
+        <option value="AI">AI</option>
+        <option value="Coding Events">Coding Events</option>
+        <option value="Other">Other - Please specify below!</option>
+    </select>
+
     <!-- put this in a div so that it can be styled in CSS and text-align: center;-->
     <div id="app">
+        <form id="userEntry">
         <p>Share your tech-related news here!</p>
-        <form id="commentInput">
-            <input type="text" minlength="4" maxlength="10" required />
-            <p><button id="addCommentBtn">Add Comment</button></p></br>
-        </form>
+            <input type="text" id="commentInput" minlength="4" maxlength="250" required />
+            <p><button id="addCommentBtn"> Add Comment</button></p></br>  
+        </form>  
     </div>
     <!--end of div-->
 
-
-
-
-
     <h3>Tech Talk</h3>
     <ul id="commentList">
-      <li>Your news will show up here. Thanks!</li>
+        <li>Your news will show up here. Thanks!</li>
     </ul>
-    
-
 
 </body>
 </html>

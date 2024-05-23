@@ -16,11 +16,11 @@ body {
   }
   
   button {
-    font-size: 20px;
+    font-size: 15px;
     padding: 5px 10px;
     border: 1px solid black;
     border-radius: 5px;
-    cursor: pointer;
+    cursor:cell; /* cursor becomes an add icon*/
   }
   button:hover {
     border-color: #09507c;
