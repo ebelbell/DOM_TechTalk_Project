@@ -1,5 +1,3 @@
-
-
 /********************* TECH TALK ************************************/
 //create a form for the user to add input to the blog news
 //Caching DOM Elements
@@ -35,10 +33,12 @@ function addComment() {
   }
 
   //specify the user's selection of topic in the input
-  if (subject === "JavaScript") {
+  if (subject === "JavaScript" || subject === "AI" || subject === "Coding Events") {
     //prepend the subject to the comment 
     comment = `${subject} - ${comment}`;
-  } 
+  } else if (subject === "Other - Please specify below!") {
+    comment = `Other - ${comment}`;
+  }
 
   //add the value to the comment list element
   let listItem = document.createElement("li");

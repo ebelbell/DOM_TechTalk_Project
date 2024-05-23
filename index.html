@@ -21,7 +21,7 @@
 
     <!--subject form-->
     <select name="subject" id="cSubject"> 
-        <option placeholder="" disabled selected>Tech Subject</option>
+        <option value="" disabled selected>Tech Subject</option>
         <option value="JavaScript">JavaScript</option>
         <option value="AI">AI</option>
         <option value="Coding Events">Coding Events</option>
@@ -31,8 +31,7 @@
     <!-- put this in a div so that it can be styled in CSS and text-align: center;-->
     <div id="app">
         <form id="userEntry">
-        <p>Share your tech-related news here!</p>
-            <input type="text" id="commentInput" minlength="8" maxlength="250" required />
+            <input type="text" id="commentInput" placeholder="Share your tech-related news here!" minlength="8" maxlength="250" required />
             <p><button id="addCommentBtn"> Add Comment</button></p></br>  
         </form>  
     </div>
