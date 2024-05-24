@@ -32,6 +32,14 @@ function addComment() {
     return;
   }
 
+  //set the default to "Add Comment" but if the user clicks, it will say "Thanks!"
+  var x = document.getElementById("addCommentBtn");
+  if (x.innerHTML === "Add Comment") {
+    x.innerHTML = "Add Comment";
+  } else {
+    x.innerHTML = "Thanks!";
+  }
+
   //specify the user's selection of topic in the input
   if (subject === "JavaScript" || subject === "AI" || subject === "Coding Events") {
     //prepend the subject to the comment 
