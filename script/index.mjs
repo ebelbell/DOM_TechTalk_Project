@@ -6,6 +6,8 @@ const cInput = document.getElementById("commentInput");
 const cBtn = document.getElementById("addCommentBtn");
 //determine what subject the user selected to share
 const cSubject = document.getElementById("cSubject");
+// Cache at least one element using querySelector or querySelectorAll.
+const charCount = document.querySelector("#charCount"); 
 
 //set the height of the input element to be 100%.
 cInput.style.height = "100%";
@@ -55,6 +57,9 @@ function addComment() {
   //push the new list item to the top of the list
   cList.prepend(listItem);
   //cList.prepend(listItem);
+
+  // Reset the character count
+  charCount.textContent = "0/250";
 
   //clear the input element
   cInput.value = ""; //empty string
