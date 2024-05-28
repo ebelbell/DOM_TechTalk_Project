@@ -1,7 +1,7 @@
 /********************* TECH TALK ************************************/
 //create a form for the user to add input to the blog news
 //Caching DOM Elements
-const cList = document.getElementById("java_CommentList");
+const cList = document.getElementById("js_CommentList");
 const cInput = document.getElementById("commentInput");
 const cBtn = document.getElementById("addCommentBtn");
 //determine what subject the user selected to share
@@ -22,7 +22,6 @@ cInput.addEventListener("keydown", (e) => {
   }
 });
 
-
 //event handler function for the comment input
 function addComment() {
   //read and cache the value from the input element
@@ -32,6 +31,20 @@ function addComment() {
     //return if there's no value
     alert("Comment must be between 8 and 250 characters.");
     return;
+  }
+
+// Modify at least one attribute of an element in response to user interaction
+// Specify the user's selection of topic in the input
+  if (subject === "JavaScript") {
+    comment = `JavaScript - ${comment}`;
+    cInput.style.backgroundColor = "lightgreen"; // Change background color for JavaScript
+  } else if (subject === "AI") {
+    comment = `AI - ${comment}`;
+    cInput.style.backgroundColor = "lightgrey"; // Change background color for AI
+  } else if (subject === "Coding Events") {
+    comment = `Coding Events - ${comment}`;
+  } else if (subject === "Other - Please specify below!") {
+    comment = `Other - ${comment}`;
   }
 
   //set the default to "Add Comment" but if the user clicks, it will say "Thanks!"
